@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@700&display=swap');
+
+/*LOGO*/
+.header_label_logo {
+    font-weight: 700;
+    font-size: 32px;
+    font-family: 'M PLUS 1p', sans-serif;
+
+    width: 94px;
+    height: 48px;
+
+    margin-top: 17px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    padding: 0;
+
+    color: #C90000;
+    float: left;
+}

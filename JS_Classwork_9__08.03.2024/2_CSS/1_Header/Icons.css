@@ -1,0 +1,27 @@
+/*ICONS*/
+.header_icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 113px;
+    height: 29px;
+
+    margin-top: 27px;
+    margin-left: 128px;
+    float: left;
+}
+
+.heart {
+    width: 24px;
+    height: 22px;
+}
+
+.loup {
+    width: 23px;
+    height: 23px;
+}
+
+.cart {
+    width: 29px;
+    height: 24px;
+}

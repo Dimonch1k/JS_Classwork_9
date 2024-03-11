@@ -1,0 +1,10 @@
+/*3_Footer*/
+footer {
+    width: 1440px;
+    height: 372px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(15, 15, 15);
+    display: flex;
+    margin: 0;
+    padding: 0;
+}

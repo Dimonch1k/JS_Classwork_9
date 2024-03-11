@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@700&family=Montserrat:wght@500&display=swap');
+
+
+/*CONTACT US*/
+
+.footer_contact_us {
+    width: 186px;
+    height: 98px;
+
+    margin-bottom: 52px;
+    float: left;
+
+    display: block;
+}
+
+.footer_label_contact_us {
+    width: 116px;
+    height: 24px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/*Gmail*/
+.gmail {
+    width: 202px;
+    height: 24px;
+
+    margin-top: 15px;
+}
+
+.icon_gmail {
+    width: 24px;
+    height: 24px;
+
+    float: left;
+}
+
+
+.label_gmail {
+    width: 185px;
+    height: 20px;
+    padding-top: 2px;
+}
+
+.label_gmail > span {
+    width: 141px;
+    height: 19px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+
+    margin-left: 13px;
+}
+
+
+/*Phone*/
+.phone {
+    width: 149px;
+    height: 24px;
+
+    margin-top: 13px;
+}
+
+.icon_phone {
+    width: 26px;
+    height: 26px;
+
+    float: left;
+}
+
+.label_phone {
+    width: 149px;
+    height: 20px;
+    padding-top: 2px;
+}
+
+.label_phone > span {
+    width: 109px;
+    height: 19px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+
+    margin-left: 13px;
+}

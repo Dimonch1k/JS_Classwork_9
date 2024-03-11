@@ -1,0 +1,21 @@
+/*HERO*/
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    grid-gap: 18px;
+
+    height: auto;
+    width: 1240px;
+
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.hero_heading {
+    width: 925px;
+    height: 53px;
+
+    display: flex;
+    flex-direction: row;
+}

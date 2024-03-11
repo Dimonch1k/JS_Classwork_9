@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@700&family=Montserrat:wght@500&display=swap');
+
+
+/*Label gravel washes*/
+.heading_label_gravel_washes {
+    width: 260px;
+    height: 20px;
+
+    margin-right: 259px;
+    margin-top: 8px;
+}
+
+.heading_label_gravel_washes > span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+/*Amount of goods*/
+.heading_label_amount_of_goods {
+    width: 92px;
+    height: 19px;
+
+    margin-top: 17px;
+    margin-right: 19px;
+}
+
+.heading_label_amount_of_goods > span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: rgb(201, 0, 0);
+}
+
+/*Heading sorting by*/
+.heading_sorting_by {
+    overflow: hidden;
+    width: 295px;
+    height: 53px;
+
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sorting {
+    width: 245px;
+    height: 21px;
+
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+
+    color: rgb(34, 34, 34);
+    margin: 16px 25px;
+
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}

@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@700&family=Montserrat:wght@500&display=swap');
+
+
+/*MATERIAL FILTER*/
+
+#details_country {
+    width: 245px;
+    height: auto;
+
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#details_country summary {
+    font-weight: bold;
+    width: 100%;
+    height: 19px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+
+    list-style: none;
+    align-items: center;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#details_country summary::after {
+    content: '';
+    width: 18px;
+    height: 10px;
+    background: url('https://uploads.sitepoint.com/wp-content/uploads/2023/10/1697699669arrow.svg') no-repeat;
+
+    display: flex;
+    justify-content: space-between;
+
+    background-size: cover;
+    transition: 0.3s;
+}
+
+#details_country[open] > summary::after {
+    transform: rotate(180deg);
+}
+
+#details_country summary::-webkit-details-marker {
+    display: none;
+}
+
+#details_country[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 0.5em;
+    transition: 0.4s;
+}
+
+
+/*Countries*/
+.details_country_checkbox {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 10px;
+}
+
+.country_line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    grid-gap: 10px;
+}
+
+.country_line span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}

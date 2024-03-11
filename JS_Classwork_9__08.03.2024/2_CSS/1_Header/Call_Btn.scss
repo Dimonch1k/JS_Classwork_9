@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@700&family=Montserrat:wght@500&display=swap');
+
+/*CALL BUTTON*/
+.call_button {
+  margin-left: 45px;
+  width: 226px;
+  height: 47px;
+  margin-top: 18px;
+
+
+  text-align: center;
+  border: none;
+  background-color: rgb(201, 0, 0);
+
+  span {
+    Width: 136px;
+    Height: 19px;
+
+    color: white;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+  }
+}

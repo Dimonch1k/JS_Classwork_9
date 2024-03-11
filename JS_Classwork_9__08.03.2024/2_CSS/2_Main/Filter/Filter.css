@@ -1,0 +1,32 @@
+/*FILTER*/
+
+.filter {
+    width: 295px;
+    height: auto;
+    float: right;
+
+    display: flex;
+    flex-direction: column;
+    grid-gap: 25px;
+}
+
+.filter_box {
+    width: 295px;
+    height: auto;
+    box-shadow: 0 20px 20px 20px rgba(14, 88, 48, 0.10);
+    background-color: rgb(255, 255, 255);
+
+    display: flex;
+    justify-content: center;
+}
+
+.filters {
+    width: 245px;
+    height: auto;
+
+    margin: 28px 24px;
+
+    display: flex;
+    flex-direction: column;
+    grid-gap: 40px;
+}

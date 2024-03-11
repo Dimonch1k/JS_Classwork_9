@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@700&family=Montserrat:wght@500&display=swap');
+
+/*FILTER HEADING*/
+
+.filter_heading {
+    width: 295px;
+    height: 54px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgb(255, 255, 255);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter_heading_label {
+    width: 253px;
+    height: 24px;
+    float: left;
+}
+
+.filter_heading_label > span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.filter_heading_label > img {
+    float: right;
+    cursor: pointer;
+}

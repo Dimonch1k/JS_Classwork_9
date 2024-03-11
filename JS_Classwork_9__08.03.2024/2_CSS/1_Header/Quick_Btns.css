@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@700&family=Montserrat:wght@500&display=swap');
+
+/*QUICK INFO BUTTONS*/
+.header_quick_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 494px;
+    height: 19px;
+
+    margin-top: 32px;
+    margin-bottom: 34px;
+    margin-left: 125px;
+    padding: 0;
+    float: left;
+}
+
+.header_quick_info div button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+
+    color: #C90000;
+    background-color: white;
+
+    border: none;
+    cursor: pointer;
+    float: left;
+}
+
+.header_quick_info div button a {
+    text-decoration: none;
+    color: #C90000;
+}

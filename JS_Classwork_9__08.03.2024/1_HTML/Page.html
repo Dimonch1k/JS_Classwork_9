@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--HEAD-->
+<head>
+	<meta charset="UTF-8">
+	<title>HTML_CSS_JS_Homework_09.02.2024</title>
+
+	<!--CSS LINKS-->
+
+	<!--BODY-->
+	<link href="/2_CSS/BODY.css" rel="stylesheet">
+
+	<!--1_Header-->
+	<link href="/2_CSS/1_Header/Header.css" rel="stylesheet">
+	<link href="/2_CSS/1_Header/Logo.css" rel="stylesheet">
+	<link href="/2_CSS/1_Header/Quick_Btns.css" rel="stylesheet">
+	<link href="/2_CSS/1_Header/Icons.css" rel="stylesheet">
+	<link href="/2_CSS/1_Header/Call_Btn.scss" rel="stylesheet">
+
+	<!--2_Main-->
+	<link href="/2_CSS/2_Main/Main/Main.css" rel="stylesheet">
+	<link href="/2_CSS/2_Main/Main/Main_heading.css" rel="stylesheet">
+	<link href="/2_CSS/2_Main/Main/Hero.css" rel="stylesheet">
+	<link href="/2_CSS/2_Main/Main/Products.css" rel="stylesheet">
+
+	<!--Filters-->
+	<link href="/2_CSS/2_Main/Filter/Filter.css" rel="stylesheet">
+	<link href="/2_CSS/2_Main/Filter/Heading/Heading.css" rel="stylesheet">
+
+	<link href="/2_CSS/2_Main/Filter/Filters/Price.css" rel="stylesheet">
+	<link href="/2_CSS/2_Main/Filter/Filters/Material.css" rel="stylesheet">
+	<link href="/2_CSS/2_Main/Filter/Filters/Country.css" rel="stylesheet">
+	<link href="/2_CSS/2_Main/Filter/Filters/Color.css" rel="stylesheet">
+
+	<!--3_Footer-->
+	<link href="/2_CSS/3_Footer/Footer.css" rel="stylesheet">
+	<link href="/2_CSS/3_Footer/Logo.css" rel="stylesheet">
+	<link href="/2_CSS/3_Footer/Location.css" rel="stylesheet">
+	<link href="/2_CSS/3_Footer/Quick_Btns.css" rel="stylesheet">
+	<link href="/2_CSS/3_Footer/Another_info.css" rel="stylesheet">
+	<link href="/2_CSS/3_Footer/Contact_us.css" rel="stylesheet">
+	<link href="/2_CSS/3_Footer/Follow_us.css" rel="stylesheet">
+
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+				integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+</head>
+
+
+<!--BODY-->
+<body>
+<script src="/3_JS/2_Main/Catalog/Cart.js"></script>
+<script>
+	let c = new Cart()
+</script>
+
+
+<!--HEADER-->
+<header class="header">
+	<!--LOGO-->
+	<div class="header_label_logo" id="logo">
+		<span>
+			<b>LOGO</b>
+		</span>
+	</div>
+
+	<!--QUICK INFO BUTTONS-->
+	<div class="header_quick_info">
+		<div class="header_catalog" id="header_catalog">
+			<button>
+				<a href="">
+					<strong>Каталог</strong>
+				</a>
+			</button>
+		</div>
+		<div class="header_about_us" id="header_about_us">
+			<button>
+				<a href="">
+					Про нас
+				</a>
+			</button>
+		</div>
+		<div class="header_faq" id="header_faq">
+			<button id="logout">
+				<a href="">
+					Logout
+				</a>
+			</button>
+		</div>
+		<div class="header_contacts" id="header_contacts">
+			<button>
+				<a href="register.html">Зареєструватись</a>
+			</button>
+		</div>
+	</div>
+
+	<!--ICONS-->
+	<div class="header_icons">
+		<div class="heart">
+			<span>
+				<img alt="Heart" src="/IMAGES/1_Header/1_header_images/Heart.png">
+			</span>
+		</div>
+		<div class="loup img">
+			<span>
+				<img alt="Loup to look for something" src="/IMAGES/1_Header/1_header_images/Loup.png">
+			</span>
+		</div>
+
+		<div class="cart img">
+			<span>
+				<img alt="Cart shows the added goods" src="/IMAGES/1_Header/1_header_images/Cart.png">
+			</span>
+		</div>
+	</div>
+
+	<!--BUTTON CALL-->
+	<div class="call">
+		<button class="call_button" id="phone_btn">
+			<span>
+				Телефонувати
+			</span>
+		</button>
+	</div>
+</header>
+
+<!--MAIN-->
+<main class="main">
+
+
+	<div class="hero">
+
+		<!--GOODS-->
+		<section class="products">
+			<!--Heading in main-->
+			<div class="hero_heading">
+				<!--Gravel washes-->
+				<div class="heading_label_gravel_washes">
+				<span>
+					Гранітні мийки
+				</span>
+				</div>
+
+				<!--Goods-->
+				<div class="heading_label_amount_of_goods" id="goods_amount">
+				<span id="counter">
+					23 товара
+				</span>
+				</div>
+
+				<!--Sorting by-->
+				<div class="heading_sorting_by">
+					<form action="">
+						<label>
+							<select class="sorting">
+								<option value="" disabled selected hidden>Сортувати за</option>
+								<option value="sort" id="Simple" selected>Звичайне</option>
+								<option value="sort" id="ascending_sort">Спочатку дешеві</option>
+								<option value="sort" id="descending_sort">Спочатку дорогі</option>
+							</select>
+						</label>
+					</form>
+				</div>
+			</div>
+
+			<!--Product catalog-->
+			<div class="product_catalog_">
+				<!--GRID CONTAINER-->
+				<div class="grid-container" id="products_area">
+					<div class="spinner-border text-danger" role="status">
+						<span class="visually-hidden">Loading...</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--FILTER-->
+		<section class="filter">
+			<!--Filter heading-->
+			<div class="filter_heading">
+				<div class="filter_heading_label">
+					<span>
+						Фільтрування
+					</span>
+					<img src="/IMAGES/2_Main/Filter_images/Bin.png"
+							 alt="Remove all filters which user has chose">
+				</div>
+			</div>
+
+			<!--Filter box-->
+			<div class="filter_box">
+				<div class="filters">
+
+					<!--Price tag slider-->
+					<div class="price_tag_slider_filter">
+						<details id="details_price_tag_slider" open>
+							<summary>
+								Ціна
+							</summary>
+
+							<!--Show from min to max price-->
+							<div class="price-content">
+								<div class="min-value-range">
+									<span id="min-value">5000</span>
+								</div>
+
+								<!--Dash-->
+								<p id="dash"></p>
+
+								<div class="max-value-range">
+									<span id="max-value">12000</span>
+								</div>
+							</div>
+
+							<!--Range slider-->
+							<div class="range-slider">
+								<div class="range-fill"></div>
+
+								<label>
+									<input
+										type="range"
+										class="min-price"
+										value="6000"
+										min="5000"
+										max="13000"
+										step="20"
+									/>
+								</label>
+								<label>
+									<input
+										type="range"
+										class="max-price"
+										value="12000"
+										min="5000"
+										max="13000"
+										step="20"
+									/>
+								</label>
+							</div>
+						</details>
+
+					</div>
+
+
+					<!--Material-->
+					<div class="material_filter">
+						<details id="details_material" open>
+							<summary>
+								Матеріал
+							</summary>
+
+							<form class="details_material_checkbox">
+								<div class="iron material_line">
+									<label>
+										<input type="checkbox">
+									</label>
+									<span>Метал</span>
+								</div>
+
+								<div class="gravel material_line">
+									<label>
+										<input type="checkbox">
+									</label>
+									<span>Граніт</span>
+								</div>
+
+								<div class="ceramic material_line">
+									<label>
+										<input type="checkbox">
+									</label>
+									<span>Кераміка</span>
+								</div>
+
+								<div class="cement material_line">
+									<label>
+										<input type="checkbox">
+									</label>
+									<span>Бетон</span>
+								</div>
+							</form>
+						</details>
+					</div>
+
+
+					<!--Country-->
+					<div class="country_filter">
+						<details id="details_country" open>
+							<summary>
+								Країна
+							</summary>
+
+							<form class="details_country_checkbox">
+								<div class="ukraine country_line">
+									<label>
+										<input type="checkbox">
+									</label>
+									<span>Україна</span>
+								</div>
+
+								<div class="china country_line">
+									<label>
+										<input type="checkbox">
+									</label>
+									<span>Китай</span>
+								</div>
+
+								<div class="france country_line">
+									<label>
+										<input type="checkbox">
+									</label>
+									<span>Франція</span>
+								</div>
+
+								<div class="germany country_line">
+									<label>
+										<input type="checkbox">
+									</label>
+									<span>Германія</span>
+								</div>
+
+								<div class="italy country_line">
+									<label>
+										<input type="checkbox">
+									</label>
+									<span>Італія</span>
+								</div>
+
+								<div class="poland country_line">
+									<label>
+										<input type="checkbox">
+									</label>
+									<span>Польща</span>
+								</div>
+							</form>
+						</details>
+					</div>
+
+
+					<!--Color-->
+					<div class="color_filter">
+						<details id="details_color" open>
+							<summary>
+								Колір
+							</summary>
+
+							<form class="details_color_checkbox">
+								<div class="white color_line">
+									<label>
+										<input type="checkbox">
+									</label>
+									<span>Білий</span>
+								</div>
+
+								<div class="black color_line">
+									<label>
+										<input type="checkbox">
+									</label>
+									<span>Чорний</span>
+								</div>
+
+								<div class="red color_line">
+									<label>
+										<input type="checkbox">
+									</label>
+									<span>Червоний</span>
+								</div>
+
+								<div class="grey color_line">
+									<label>
+										<input type="checkbox">
+									</label>
+									<span>Сірий</span>
+								</div>
+
+								<div class="green color_line">
+									<label>
+										<input type="checkbox">
+									</label>
+									<span>Зелений</span>
+								</div>
+							</form>
+						</details>
+					</div>
+
+				</div>
+			</div>
+		</section>
+	</div>
+</main>
+
+
+<!--FOOTER-->
+<footer class="footer">
+	<!--LOGO-->
+	<div class="footer_label_logo">
+		<span>
+			LOGO
+		</span>
+	</div>
+
+	<!--SECTION LOCATION-->
+	<section class="footer_location">
+		<!--Label location-->
+		<div class="label_location">
+			<span>
+				location
+			</span>
+		</div>
+
+		<!--Point 1-->
+		<div class="point1 point">
+			<!--Icon point 1-->
+			<div class="icon_point">
+				<span>
+					<img src="/IMAGES/3_Footer/Point.png" alt="Point1 location">
+				</span>
+			</div>
+
+			<!--Address 1-->
+			<div class="address">
+				<span>
+					Wisconsin Ave, Suite 700
+					Chevy Chase, Maryland 20815
+				</span>
+			</div>
+		</div>
+
+		<!--Point 2-->
+		<div class="point2 point">
+			<!--Icon point 2-->
+			<div class="icon_point">
+				<span>
+					<img src="/IMAGES/3_Footer/Point.png" alt="Point2 location">
+				</span>
+			</div>
+
+			<!--Address 2-->
+			<div class="address">
+				<span>
+					Wisconsin Ave, Suite 700
+					Chevy Chase, Maryland 20815
+				</span>
+			</div>
+		</div>
+
+		<!--Point 3-->
+		<div class="point3 point">
+			<!--Icon point 3-->
+			<div class="icon_point">
+				<span>
+					<img src="/IMAGES/3_Footer/Point.png" alt="Point3 location">
+				</span>
+			</div>
+
+			<!--Address 3-->
+			<div class="address">
+				<span>
+					Wisconsin Ave, Suite 700
+					Chevy Chase, Maryland 20815
+				</span>
+			</div>
+		</div>
+	</section>
+
+	<!--SECTION QUICK INFO-->
+	<section class="footer_quick_info">
+		<div class="footer_catalog" id="footer_catalog">
+			<button>
+				<span>
+					Каталог
+				</span>
+			</button>
+		</div>
+		<div class="footer_about_us" id="footer_about_us">
+			<button>
+				<span>
+					Про нас
+				</span>
+			</button>
+		</div>
+		<div class="footer_contacts" id="footer_contacts">
+			<button>
+				<span>
+					Контакти
+				</span>
+			</button>
+		</div>
+		<div class="footer_faq" id="footer_faq">
+			<button>
+				<span>
+					FAQ
+				</span>
+			</button>
+		</div>
+
+	</section>
+
+	<!--SECTION ANOTHER INFO-->
+	<section class="footer_another_info">
+		<!--CONTACT US-->
+		<div class="footer_contact_us">
+			<!--Label contact us-->
+			<div class="footer_label_contact_us">
+			<span>
+				Contact us
+			</span>
+			</div>
+
+			<!--Gmail icon-->
+			<div class="gmail">
+				<!--Icon Gmail-->
+				<div class="icon_gmail">
+					<span>
+						<img src="/IMAGES/3_Footer/Gmail.png" alt="Gmail">
+					</span>
+				</div>
+
+				<!--Label Gmail-->
+				<div class="label_gmail">
+					<span>
+						logo@figma.com
+					</span>
+				</div>
+			</div>
+
+			<!--Phone number-->
+			<div class="phone">
+				<!--Icon Phone-->
+				<div class="icon_phone">
+					<span>
+						<img src="/IMAGES/3_Footer/Phone.png" alt="Gmail">
+					</span>
+				</div>
+
+				<!--Label phone number-->
+				<div class="label_phone">
+					<span>
+						+3800065628
+					</span>
+				</div>
+			</div>
+		</div>
+
+		<!--FOLLOW US-->
+		<div class="footer_follow_us">
+			<!--Label follow us-->
+			<div class="footer_label_follow_us">
+				<span>
+					Follow us
+				</span>
+			</div>
+
+			<!--Social images-->
+			<div class="footer_social_follow_us">
+				<!--Facebook-->
+				<div class="facebook">
+					<span>
+						<img src="/IMAGES/3_Footer/Facebook.png" alt="Facebook">
+					</span>
+				</div>
+
+				<!--Telegram-->
+				<div class="telegram">
+					<span>
+						<img src="/IMAGES/3_Footer/Telegram.png" alt="Telegram">
+					</span>
+				</div>
+
+				<!--Instagram-->
+				<div class="instagram">
+					<span>
+						<img src="/IMAGES/3_Footer/Instagram.png" alt="Instagram">
+					</span>
+				</div>
+			</div>
+		</div>
+	</section>
+</footer>
+
+
+<!--JAVA SCRIPT-->
+
+
+<!--JQUERY-->
+<script
+	src="https://code.jquery.com/jquery-3.7.1.js"
+	integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+	crossorigin="anonymous">
+</script>
+
+
+<!--Bootstrap-->
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+	crossorigin="anonymous">
+</script>
+
+
+<!--1_Header-->
+<script src="/3_JS/1_Header/Header.js"></script>
+
+<!--2_Main-->
+<script src="/3_JS/2_Main/Catalog/Product_.js"></script>
+<script src="/3_JS/2_Main/Filter/Price.js"></script>
+<script src="/3_JS/2_Main/Catalog/jQuery.js"></script>
+
+<!--3_Footer-->
+<script src="/3_JS/3_Footer/Footer.js"></script>
+
+
+</body>
+</html>

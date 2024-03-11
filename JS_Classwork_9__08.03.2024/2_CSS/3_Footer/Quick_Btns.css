@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@700&family=Montserrat:wght@500&display=swap');
+
+
+/*QUICK INFO*/
+.footer_quick_info {
+    margin: 102px 170px 71px 170px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_quick_info div {
+    line-height: 2.5em;
+}
+
+.footer_quick_info div button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+
+    color: rgb(255, 255, 255);
+    background-color: rgb(15, 15, 15);
+    line-height: 2.8em;
+
+    border: none;
+    cursor: pointer;
+    float: left;
+}
